@@ -1,0 +1,64 @@
+/* General Styling */
+body {
+    font-family: 'MedievalSharp', cursive; /* Fantasy font */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #ffcc00; /* Gold-like color */
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Name Input Section */
+.name-input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-input form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.name-input input {
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.name-input button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.name-input button:hover {
+    background: #d4a100;
+}
+
+/* Dice Button */
+#random-name-button {
+    font-size: 1.5rem;
+    color: #090908;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#random-name-button:hover {
+    transform: rotate(20deg);
+}

@@ -62,3 +62,218 @@ p {
 #random-name-button:hover {
     transform: rotate(20deg);
 }
+
+/* gender pick start */
+/* Gender Pick Section */
+.gender-pick {
+    display: none; /* Initially hidden */
+    background-color: yellow; /* Your requested background color */
+    width: 80%; /* Set width to 80% */
+    max-width: 600px; /* Optional: Limit max width */
+    margin: 20px auto; /* Center it horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px); /* Slightly move up */
+}
+
+.gender-pick.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+.gender-pick h4 {
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.gender-pick-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.gender-pick-container div {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gender-pick-container div:hover {
+    transform: scale(1.1);
+}
+
+.gender-pick-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #000; /* Black Border */
+    padding: 5px;
+    background-color: white; /* White Background */
+}
+
+.gender-pick-container p {
+    font-weight: bold;
+    color: #000; /* Black Text */
+    margin-top: 5px;
+}
+
+/* Avatar modal styles */
+.avatar {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.avatar.show {
+    display: flex; /* Show when class is added */
+    flex-direction: column;
+    align-items: center;
+}
+/* Avatar container */
+.avatar-container {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close button */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.close-icon:hover {
+    color: red;
+}
+
+/* Avatar selection grid */
+.male-avatar, .female-avatar, .undefine-avatar {
+    display: none; /* Initially hidden */
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Avatar images */
+.avatar-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border: 3px solid transparent;
+}
+
+.avatar-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    border-color: #ffcc00;
+    cursor: pointer;
+}
+
+/* Ensure each row has consistent spacing */
+.male-avatar a, .female-avatar a, .undefine-avatar a {
+    display: inline-block;
+}
+
+/* Close button */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Hide all avatars initially */
+.male-avatar, .female-avatar, .undefine-avatar {
+    display: none;
+}
+
+/* Hide All Avatars Initially */
+.male-avatar, .female-avatar, .undefine-avatar {
+    display: none;
+}
+
+/* modal start */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-container {
+    position: relative;
+    background-color: #ffcc00;
+    color: #090908;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-container .close-icon {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #090908;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button Styling */
+button {
+    background: #080909;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ebebef;
+    color: black;
+
+}
+

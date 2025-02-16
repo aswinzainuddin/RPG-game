@@ -14,30 +14,96 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
   </head>
   <body class="bg-dark text-white text-center vh-100">
     <header class="container text-center ">
-        <h1>Welcome advanturer!!</h1>
+        <h1>Welcome adventurer!!</h1>
         <p>Get ready to embark to the world of NEVERNESS!</p>
     </header>
 
     <main>
         <img src="/RPG-game/img/ixchelzimg.png" alt="Ixchelz-img" width="100" height="200">
-        <p>Hi advanturer, im Ixchelz. Please tell me your name!!</p>
+        <p>Hi adventurer, im Ixchelz. Please tell me your name!!</p>
         <div class="name-input">
             <form action="" id="submit-name">
                 <button id="random-name-button" type="button"><i class="fa-solid fa-dice"></i></button>
                 <input type="text" id="player-name" placeholder="input name...">
-                <button type="submit" >submit</button>
+                <button type="submit" id="submit-button">submit</button>
             </form>
         </div>
+
+        <div class="gender-pick">
+          <h4>Please select your gender!!!</h4>
+          <div class="gender-pick-container">
+            <div class="male">
+              <a href=""><img src="/img/maleicon-removebg-preview.png" alt="male-icon"></a>
+              <p>Male</p>
+            </div>
+            <div class="female">
+              <a href=""><img src="/img/femaleicon.webp" alt="female-icon"></a>
+              <p>Female</p>
+            </div>
+            <div class="undefine">
+              <a href=""><img src="/img/undefineicon.png" alt="male-icon"></a>
+              <p>Undefine</p>
+            </div>
+          </div>
+        </div>
+
+        
     </main>
 
+<!-- footer start -->
     <footer>
 
     </footer>
     
+<!-- footer end -->
 
+<!-- avatar section -->
+<div class="avatar">
+  <div class="avatar-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="female-avatar">
+      <a href=""><img src="/img/maleavatar1.jpg" alt="male-avatar1"></a>
+      <a href=""><img src="/img/maleavatar2.webp" alt="male-avatar1"></a>
+      <a href=""><img src="/img/maleavatar3.avif" alt="male-avatar1"></a>
+    </div>
+    <div class="male-avatar">
+      <a href=""><img src="/img/femaleavatar1.webp" alt="female-avatar1"></a>
+      <a href=""><img src="/img/femaleavatar2.jpg" alt="female-avatar1"></a>
+      <a href=""><img src="/img/femaleavatar3.jpg" alt="female-avatar1"></a>
+    </div>
+    <div class="undefine-avatar">
+      <a href=""><img src="/img/undefineavatar.jpg" alt="female-avatar1"></a>
+    </div>
+  </div>
+</div>
+ <!-- avatar end -->
+
+<!-- modal start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <h3>You will start your adventure with: </h3>
+          <p>name: <span class="player-name">name</span></p>
+          <p>level: 1</p>
+          <p>Genre: Male/Female</p>
+          <h3>Start the game?</h3>
+          <button type="submit">YES</button>
+          <button type="submit">NO</button>
+      </div>
+    </div>
+
+<!-- modal end -->
+
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
